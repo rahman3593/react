@@ -118,3 +118,16 @@ useState - state Variables in react
 	let istofRestaurants;
 
 Whenever the state variable updates/changes., react will re-render the component
+
+EP-6:
+Microservice Architecture:
+1.Single responsibility principle
+2.Separation of Concern
+
+UseEffect Hook -  2 arguments - callback function and dependency array
+
+useEffect callback function will be called after component rendered
+
+Shimmer UI - > Instead of showing loader show fake skeleton UI
+
+Conditional rendering - rendering components based on condition
