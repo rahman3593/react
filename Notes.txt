@@ -1,0 +1,120 @@
+Html:5 >> Boiler plate code 
+
+Browsers have built in Javascript engines 
+
+CDN - Content delivery Network
+DOM - Document object model
+
+react.development.js. >
+ Core react file
+react-dom.development.js. > 
+to update dom in browserBridge between react core logic and browser
+
+Render > converts the javascript object into html tag
+
+EP-2
+
+NPM   >  Does not have full form. 
+Packages manager >> Registry that contains code packages
+
+npm install >> to recreate node modules
+
+npm install -D package name 
+
+-D > Dev dependency (required for development phase)
+
+Dev Dependency vs prod dependency
+
+Package version : ^ - minor version upgrades
+~ - Major version upgrade
+
+Package.json >> configuration for npm
+Package-lock.json >> Keeps record of every exact version of package/dependency
+
+Integrity in package-lock.json >> hash to verify dev machine version and prod version is same
+
+Transitive Dependencies >> package Depends on another package and that package depends on another
+
+Package and package-lock should be committed to repo
+
+Bundler > cleaned, cached, Minified,Bundled, Compressed code
+Eg., Webpack, Parcel, Veet
+
+Parcel:
+	- Dev Build
+	- Local Server
+	- HMR - Hot Module replacement (when file saved automatically page refresh in browser) - Hot reloading
+	- File Watching Algorithm- Written in c++
+	- Caching- Faster Builds
+	- Image Optimisation
+	- Minification
+	- Bundling
+	- Compress
+	- Consistent Hashing
+	- Code Splitting
+	- Differential Bundling - support older browsers
+	- Diagnositics
+	- Error Handling
+	- HTTPS support in local
+	- Tree Shaking - remove unused code
+	- Different Dev and Production bundles
+
+
+npx > executing a package
+
+
+browserslist. >> can provide what are the browsers to support , can be country specific also
+
+EP -3
+React.CreateElement -> ReactElement JS-Object -> HTML Element(Render)
+ReactDOM.CreateRoot > render to root
+
+
+JSX -> extension of Javascript . (Not HTML in javascript)
+JSK is HTML/XML like syntax
+
+JSX code cannot be understood by JS Engine
+JS engine understands only ECMA script . 
+JSX uses camelcase
+
+Babel transpires the JSX code to ECMA script for the browser.
+
+React Components
+	- Class Based Component – OLD
+	- Functional Component - NEW - Javascript function . 
+		It is a function that return a JSX code / React Element
+ComponentVariable Name should start with Capital letter
+
+Component composition > component inside component
+
+
+EP-4
+
+Props: passing arguments to a function
+
+Config-Driven UI : Ui is config driven (e.g carousel should be vertical, carousel contents . If not carousel contents will not be displayed )
+
+?.  > Optional chaining
+
+
+EP-5
+
+React is fast bcoz it efficient DOM manipulation. Bcoz it has a diff algorithm to  compare virtual DOM and update UI  
+Reconciliation Algorithm (React Fiber): 
+React 16 feature, whenever there is a change in UI
+
+Virtual DOM- Representation of actual DOM (Javascript object)
+Actual DOM - Tags like <Div>
+
+Diff Algorithm: Find the diff between the virtual DOMs (old VDOM vs new VDOM)
+
+Named Export > when multple exports from same file
+React Hooks : normal javascript function given to us by React (utility function)
+
+useState - state Variables in react
+	//State Variable Creation
+	const [listOfRestaurants] = useState()
+	//Normal Variable Creation
+	let istofRestaurants;
+
+Whenever the state variable updates/changes., react will re-render the component
