@@ -23,8 +23,8 @@
     margin: 10px;
 }
 
-.search {
-    padding: 10px;
+.filter-btn {
+    margin: 5px;
 }
 
 .res-card {
@@ -34,7 +34,7 @@
     margin: 5px;
 }
 
-.res-card :hover {
+.res-card:hover {
     border: 1px solid black;
     cursor: pointer;
 }
