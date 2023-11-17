@@ -131,3 +131,32 @@ useEffect callback function will be called after component rendered
 Shimmer UI - > Instead of showing loader show fake skeleton UI
 
 Conditional rendering - rendering components based on condition
+
+
+EP-7:
+useEffect: 
+
+If no dependency array => useEffect is called on every render
+If dependency array is emplty= [] => useEffect is called on initial render (just once)
+If dependency array is [valiable]=> called evreytime variable is up[dated
+
+react-router-dom
+createBrowserRouter : create configuration routes
+
+RouterProvider : provides routes to app
+
+useRouteError :  to get error information and show diff error page based on routing error (like 404 not found, etc)
+
+Never use anchor tag to redirect to pages use LINK
+
+React is SPA bcoz if does not redirects to another page instead new page is appended to same page
+
+Routing
+1. Client side Routing
+2. Server side Routing
+
+Outlet :  to bind child components
+
+Dynamic Routing :
+
+Dynamic data attached to url (like id)
