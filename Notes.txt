@@ -212,3 +212,8 @@ return ()=>{
 //will behave like componentDidUnmount
 }
 },[])
+
+
+EP-9
+
+Custom Hooks Chunking, Code Splitting, Dynamic Bundling, lazy loading, On demand loading, Dynamic importing - splitting the codes into multiple chucks of bundles like bundles specific to a feature
