@@ -160,3 +160,55 @@ Outlet :  to bind child components
 Dynamic Routing :
 
 Dynamic data attached to url (like id)
+
+
+
+EP-8:
+
+Class UserClass extends React.Component{
+constructor(props){
+super(props);
+this.state{
+count=0
+}
+}
+render(){
+Return ( <div/>)
+}
+}
+
+this.props.xxx
+this.state.xxx
+
+
+super(props) > If we want to use this.props or simply this keyword inside the constructor, we need to pass the props coming from the parent class (React.Component in this case) in super.
+
+Constructor >> render
+
+ComponentDidMount of child executes first before parent If multiple children, the order will be as follows., >Parent constructor
+>Parent render
+>Child1 constructor
+>Child1 render
+>Child2 constructor
+>Child2 render
+>Child1 componentDidMount
+>Child2 ComponentDidMount
+>Parent ComponentDidMount
+
+
+LifeCycle: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+2 phases:
+Render Phase: constructor & Render
+Commit Phase: Dom Update and ComponentDidMount
+
+
+Func Component : > after render > useEffect
+Class Component : After first render >componentDidMount > after subsequent render > component did update
+
+UseEffect (()=>{
+
+return ()=>{
+//will behave like componentDidUnmount
+}
+},[])
